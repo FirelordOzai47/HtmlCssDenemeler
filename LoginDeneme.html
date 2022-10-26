@@ -1,0 +1,86 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <style>
+        .container {
+            background-color: gray;
+            padding: 50px;
+            width: 60%;
+            border-radius: 5px;
+        }
+
+        .margin-input {
+            margin-top: 10px;
+        }
+
+      
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-header">
+            <h4 class="text-center"> Form Elemanlarý   </h4>
+        </div>
+
+        <div class="card-body">
+            <div class="container">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="description"> Önyazý</label>
+                        <textarea class="form-control" id="description" rows="4"> </textarea>
+                    </div>
+
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="firstName"> Ýsim</label>
+                            <input class="form-control" type="text" id="firstname" name="firstName" />
+
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Soy Ýsim </label>
+                            <input class="form-control" type="text" name="lastName" id="lastName" />
+                        </div>
+                        <div class="margin-input">
+
+                            <input type="radio" name="gender" id="male" value="male" />
+                            <label for="male">Erkek</label><br />
+                            <input type="radio" name="gender" id="female" value="female" />
+                            <label for="female"> Kadýn</label>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input class="form-control" type="password" id="password" name="password" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for=" languages">Öðrenmek istediði Dil</label>
+                            <select class="form-control" id="languages" name="languages">
+                                <option value="C#">C#</option>
+                                <option selected value="Java">Java</option>
+                                <option value="Python">Pyhton</option>
+                                <option value="Kotlin">Kotlin</option>
+
+                            </select>
+                        </div>
+                        <div class="margin-input">
+
+                            <input type="checkbox" name="position1" id="junior" value="Junior" />
+                            <label for="junior"> Baþlangýç Seviyesi</label> <br />
+                            <input type="checkbox" name="position2" id="middle" value="Middle" />
+                            <label for="middle"> Orta Seviye</label> <br />
+                            <input type="checkbox" name="position3" id="senior" value="Senior" />
+                            <label for="senior"> Senior Seviyesi</label>
+
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary" style=" float:right;"> Devam Et</button>
+
+            </div>
+        </div>
+</body>
+</html>
